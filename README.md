@@ -45,3 +45,32 @@ The script includes:
 3. Run the queries section by section to explore the data.
 
 This project is mainly for practice and learning SQL (joins, aggregates, window functions and CTEs).
+
+## Power BI Dashboards
+
+This project includes an interactive Power BI report:
+
+- **File:** `powerbi/covid_country_dashboard.pbix`
+
+It has two main pages:
+
+### 1. Overview/
+
+- Bubble/filled map of **infection rate (% of population infected)** by country  
+- Bar chart of **countries with highest testing coverage** (% of population tested)  
+- Bar chart of **countries with highest COVID-19 mortality** (% of population that died)  
+- Scatter plot comparing **testing % vs death %**, with a trend line to show the overall relationship  
+
+All visuals are cross-filtered and can be explored by selecting specific countries.
+
+### 2. Country Trend (7-Day Rolling Average)
+
+- **Country slicer** with search to pick any location  
+- **KPI cards** showing:
+  - Total recorded cases  
+  - Peak 7-day average cases  
+  - Latest 7-day average cases  
+- **Line chart** of daily new cases vs 7-day rolling average  
+- **Monthly bar chart** showing waves of new cases over time  
+
+This page lets you deep-dive into how the pandemic evolved for each country.
